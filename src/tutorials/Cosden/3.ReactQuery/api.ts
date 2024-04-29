@@ -63,3 +63,14 @@ export const addTodo = async (todo: Pick<Todo, "title">): Promise<Todo> => {
 
     return newTodo;
 };
+
+
+export const addAdapt = async ( title: string ): Promise => {
+    await fetch("https://btw-server.up.railway.app/api/adapts", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ title })
+    })
+}
