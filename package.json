@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.32.0",
+    "cypress": "^13.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "socket.io-client": "^4.7.5"
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^5.28.11",
