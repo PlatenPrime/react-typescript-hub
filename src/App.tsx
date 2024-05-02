@@ -8,10 +8,11 @@ import './App.css'
 // import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 import ReduxApp from './tutorials/Cosden/5.Redux/ReduxApp'
+import ReactHookForm from './tutorials/Cosden/8.ReactHookForm/ReactHookForm'
 
 
 
- 
+
 // const queryClient = new QueryClient()
 
 
@@ -22,8 +23,18 @@ function App() {
   return (
     <>
       {/* <QueryClientProvider client={queryClient}> */}
-      <ReduxApp />
+      {/* <ReduxApp /> */}
       {/* </QueryClientProvider> */}
+
+
+
+
+      <ReactHookForm />
+
+
+
+
+
     </>
   )
 }
