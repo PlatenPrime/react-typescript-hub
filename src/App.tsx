@@ -10,11 +10,13 @@ import ReactRouter from './tutorials/Cosden/9.ReactRouter/ReactRouter'
 
 // import ReduxApp from './tutorials/Cosden/5.Redux/ReduxApp'
 // import ReactHookForm from './tutorials/Cosden/8.ReactHookForm/ReactHookForm'
+import ServerComponents from './tutorials/Cosden/10-1.ServerComponents/ServerComponents'
 
 
 
 
 // const queryClient = new QueryClient()
+
 
 
 
@@ -24,7 +26,8 @@ function App() {
   return (
     <>
 
-      <ReactRouter />
+      
+      <ServerComponents />
 
     </>
   )
