@@ -75,6 +75,53 @@ exampleObj.isAdmin =false
 
 
 
+interface Person {
+    name?: string
+    age?: (number | string)[]
+    isAdmin: boolean
+}
+
+let evh: Person = {
+    name: "Platen",
+    age: [42, "Prime"],
+    isAdmin: true
+}
+
+console.table(evh);
+
+
+
+const greetPerson = (person: Person) => {
+
+if (person.name) {
+    console.log(`Hello ${person.name.toLocaleLowerCase()}`)
+
+}
+}
+
+
+greetPerson(evh)
+
+
+
+
+
+
+enum Role { ADMIN = 4, READ_ONLY = 7, AUTHOR }
+
+
+
+
+
+
+console.log(Role.ADMIN);
+console.table(Role);
+console.warn(Role);
+
+
+
+
+
 
 
 
