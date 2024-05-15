@@ -67,12 +67,76 @@ export default function Index() {
     logMsg(multiply(3, 5))
 
 
+    // optional parameters
+
+    const addAll = (a: number, b: number, c?: number): number => {
+        if (typeof c !== 'undefined') {
+            return a + b + c
+        }
+        return a + b
+    }
+
+
+    const sumAll = (a: number, b: number, c: number = 2): number => {
+        return a + b + c
+        
+    }
+
+
+    logMsg(sumAll(1, 2, 3))
+    logMsg(sumAll(1, 2))
+    logMsg(addAll(1, 2))
+    logMsg(addAll(1, 2, 3))
 
 
 
 
 
 
+
+
+// rest parameters
+
+const total = (...nums: number[]): number => {
+    return nums.reduce((a, b) => {
+        return a + b
+    })
+}
+
+
+
+logMsg(total(1, 2, 3, 5, 89))
+
+
+
+const createError = (errMsg: string): never => {
+    throw new Error(errMsg)
+}
+
+const infinite = () => {
+let i = 1
+    while (true) {
+        i++
+    if (i > 10) {
+        break
+    }
+    }
+}   
+
+const isNumber = (value: any): boolean => {
+    return typeof value === 'number' 
+}
+
+
+const numberOrString = (a: number | string): string => {
+    if (typeof a === 'string') {
+        return a
+    }
+    if (isNumber(a)) {
+        return "number"
+    }
+    return createError("Error")
+}
 
 
 
