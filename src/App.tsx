@@ -1,7 +1,7 @@
 import { } from 'react'
 
 import './App.css'
-import Index from './tutorials/DaveGray/Typescript/4.Functions/Index'
+import Index from './tutorials/DaveGray/Typescript/5.TypeAssertions/Index'
 
 
 
