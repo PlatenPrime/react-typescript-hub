@@ -31,7 +31,7 @@ export default function Index() {
 
 
 
-    let prop: string = "Pizza"
+    const prop: string = "Pizza"
     console.log(todayTransactions[prop]);
 
 
@@ -43,6 +43,8 @@ export default function Index() {
         return total
     }
 
+
+    todaysNet(todayTransactions)
 
 
     // todayTransactions.Job = "School"
