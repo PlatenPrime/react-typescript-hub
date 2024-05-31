@@ -2,6 +2,7 @@ import React from 'react'
 
 import Heading from './components/Heading'
 import Section from './components/Section'
+import Counter from './components/Counter'
 
 
 
@@ -14,6 +15,7 @@ export default function Index() {
             <Section title="Section">
                 sigjierg
             </Section>
+            <Counter />
 
         </>
     )
